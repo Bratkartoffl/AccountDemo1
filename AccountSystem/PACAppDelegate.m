@@ -19,6 +19,10 @@
     [Parse setApplicationId:@"USxZCVkTfGJVUn4OIFD6wYiwR3N7lzcmNK79dgEA"
                   clientKey:@"yzrZ9x4uGSI7DMPgMGVRGyukVmLqaIJU9y5WW7u9"];
     
+    PFUser *user = [PFUser currentUser];
+    [user refreshInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        
+    }];
   return YES;
 }
 
